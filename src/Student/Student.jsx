@@ -5,6 +5,7 @@ import Stack from '@mui/material/Stack';
 import Display from "../Display/Display";
 // import { useState } from "react";
 import React, { useState, useRef } from "react";
+import './Style.css';
 
 
 export default function Student() {
@@ -70,7 +71,7 @@ export default function Student() {
 
     return (
         <>
-            <Box className="form" display='flex' justifyContent='center'>
+            <Box display='flex' justifyContent='center'>
                 <Box border={1} borderRadius={5} className="form" sx={{ width: 250, p: 3 }} >
                     <Stack spacing={2} direction="column">
                         <TextInput labelName={'Student Name'} onChange={changeName} ref={nameRef} helper={helper} />
